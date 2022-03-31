@@ -1,0 +1,5 @@
+com\project\disney\services\DisneyMovieService.class
+com\project\disney\entities\DisneyMovieEntity.class
+com\project\disney\repositories\DisneyMovieRepository.class
+com\project\disney\resources\DisneyMovieResource.class
+com\project\disney\DisneyApplication.class
