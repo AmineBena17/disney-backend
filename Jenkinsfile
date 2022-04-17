@@ -13,7 +13,9 @@ pipeline {
 
         stage('Test') {
                     steps {
-                        sh 'mvn test'
+                        docker.image('postgres').withRun('-p 5432:5432 -e "POSTGRES_PASSWORD=Pass2020!" -e "POSTGRES_DB=postgres"') { c ->
+                            sleep 60;
+                            sh 'mvn test'
                     }
                 }
     }
