@@ -18,4 +18,6 @@ public class DisneyMovieService {
     public List<DisneyMovieEntity> getAllMovies() {
         return disneyMovieRepository.findAll();
     }
+
+
 }
